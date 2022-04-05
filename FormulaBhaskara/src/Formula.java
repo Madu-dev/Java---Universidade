@@ -1,3 +1,5 @@
+//programa em Java para calcular a raiz de uma Equação usando a fórmula de Bhaskara
+
 import java.util.Scanner;
 public class Formula {
 
