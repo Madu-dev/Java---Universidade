@@ -5,30 +5,25 @@ consumidores pagam taxa de iluminação pública no valor de R$ 3,50, independen
 programa que solicite o consumo do cliente em quilowatts e informe qual será o valor da conta de energia.*/
 
 package calcularconsumoquilowatts;
+
 import java.util.Scanner;
+
 public class CalcularConsumoQuilowatts {
 
-    public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-      double qwt, consumo;
-      
-      
-      System.out.print("Informe o valor do consumo em quilowatts: ");
-      qwt = input.nextDouble();
-      
-      if (qwt < 10){
-          consumo = 7 + 3.50;
-          System.out.println("Consumo total é de " + consumo);
-        }
-      else if (qwt >= 10){
-          consumo = (qwt * 1.40 )+ 3.50;
-          System.out.println("Consumo total é de " + consumo);
-      }
-      else {
-          
-      }
-      
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    double qwt, consumo;
+
+    System.out.print("Informe o valor do consumo em quilowatts: ");
+    qwt = input.nextDouble();
+
+    if (qwt < 10) {
+      consumo = 7 + 3.50;
+      System.out.println("Consumo total é de " + consumo);
+    } else if (qwt >= 10) {
+      consumo = (qwt * 1.40) + 3.50;
+      System.out.println("Consumo total é de " + consumo);
+    } else {
     }
-    
+  }
 }
-  
